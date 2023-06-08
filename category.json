@@ -1,0 +1,253 @@
+ [
+      {
+        "categoryName": "Sports Cars",
+        "subcategories": [
+          {
+            "subcategoryName": "Formula 1",
+            "carToys": [
+              {
+                "id": 1,
+                "name": "Ferrari SF90",
+                "picture": "https://m.media-amazon.com/images/I/61PJT4wn-xS.jpg",
+                "price": 29.99,
+                "rating": 4.5
+              },
+              {
+                "id": 2,
+                "name": "Mercedes-AMG Petronas W12",
+                "picture": "https://www.buddytoys.eu/getattachment/62a89434-4bb1-4136-8d38-9f03f22e2a3f/BEC-7111.aspx",
+                "price": 32.99,
+                "rating": 4.8
+              },
+              {
+                "id": 3,
+                "name": "Red Bull Racing RB16B",
+                "picture": "https://m.media-amazon.com/images/I/61tNPFA-pKL.jpg",
+                "price": 27.99,
+                "rating": 4.3
+              }
+            ]
+          },
+          {
+            "subcategoryName": "GT Cars",
+            "carToys": [
+              {
+                "id": 4,
+                "name": "Porsche 911 GT3",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/51LP8PTzVzL._AC_UL600_SR600,600_.jpg",
+                "price": 34.99,
+                "rating": 4.7
+              },
+              {
+                "id": 5,
+                "name": "Aston Martin Vantage",
+                "picture": "https://m.media-amazon.com/images/I/71mCkNMYY+L.jpg",
+                "price": 31.99,
+                "rating": 4.4
+              },
+              {
+                "id": 6,
+                "name": "Chevrolet Corvette C8",
+                "picture": "https://m.media-amazon.com/images/I/61gAGTg+N1L.jpg",
+                "price": 33.99,
+                "rating": 4.6
+              }
+            ]
+          },
+          {
+            "subcategoryName": "Muscle Cars",
+            "carToys": [
+              {
+                "id": 7,
+                "name": "Ford Mustang Shelby GT500",
+                "picture": "https://m.media-amazon.com/images/I/51IhL4zuxfL._AC_UF1000,1000_QL80_.jpg",
+                "price": 29.99,
+                "rating": 4.6
+              },
+              {
+                "id": 8,
+                "name": "Dodge Challenger Hellcat",
+                "picture": "https://m.media-amazon.com/images/I/61DiH93drpL.jpg",
+                "price": 27.99,
+                "rating": 4.5
+              },
+              {
+                "id": 9,
+                "name": "Chevrolet Camaro ZL1",
+                "picture": "https://i.ebayimg.com/images/g/EEYAAOSw8hpdjM9g/s-l1600.jpg",
+                "price": 28.99,
+                "rating": 4.3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "categoryName": "Off-Road Vehicles",
+        "subcategories": [
+          {
+            "subcategoryName": "Jeeps",
+            "carToys": [
+              {
+                "id": 10,
+                "name": "Jeep Wrangler Rubicon",
+                "picture": "https://m.media-amazon.com/images/I/61HQpvMbmHL.jpg",
+                "price": 24.99,
+                "rating": 4.2
+              },
+              {
+                "id": 11,
+                "name": "Land Rover Defender",
+                "picture": "https://m.media-amazon.com/images/I/61ZK82HaNqL.jpg",
+                "price": 26.99,
+                "rating": 4.4
+              },
+              {
+                "id": 12,
+                "name": "Toyota FJ Cruiser",
+                "picture": "https://m.media-amazon.com/images/I/51Xf0+FVAfL.jpg",
+                "price": 25.99,
+                "rating": 4.3
+              }
+            ]
+          },
+          {
+            "subcategoryName": "Monster Trucks",
+            "carToys": [
+              {
+                "id": 13,
+                "name": "Grave Digger",
+                "picture": "https://m.media-amazon.com/images/I/91Ar-CWjLhL.jpg",
+                "price": 29.99,
+                "rating": 4.7
+              },
+              {
+                "id": 14,
+                "name": "Bigfoot",
+                "picture": "https://m.media-amazon.com/images/I/5115mK3dP6L._AC_UF1000,1000_QL80_.jpg",
+                "price": 28.99,
+                "rating": 4.6
+              },
+              {
+                "id": 15,
+                "name": "Monster Mutt",
+                "picture": "mhttps://cdn.monsterjam.com/s3fs-public/778988242216_1.jpg",
+                "price": 26.99,
+                "rating": 4.4
+              }
+            ]
+          },
+          {
+            "subcategoryName": "ATVs",
+            "carToys": [
+              {
+                "id": 16,
+                "name": "Polaris RZR",
+                "picture": "https://m.media-amazon.com/images/I/81me2vMpjDL.jpg",
+                "price": 23.99,
+                "rating": 4.1
+              },
+              {
+                "id": 17,
+                "name": "Can-Am Maverick",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/81hsyKMEBBS._AC_UL600_SR600,600_.jpg",
+                "price": 22.99,
+                "rating": 4.0
+              },
+              {
+                "id": 18,
+                "name": "Yamaha YXZ1000R",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/61Y5LNuTOsL._AC_UL600_SR600,600_.jpg",
+                "price": 24.99,
+                "rating": 4.2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "categoryName": "Classic Cars",
+        "subcategories": [
+          {
+            "subcategoryName": "Vintage Cars",
+            "carToys": [
+              {
+                "id": 19,
+                "name": "Volkswagen Beetle",
+                "picture": "https://static-01.daraz.com.bd/p/cbbfebba436a98e53bad964ad0f54e80.jpg_750x750.jpg_.webp_.webp",
+                "price": 19.99,
+                "rating": 4.2
+              },
+              {
+                "id": 20,
+                "name": "Ford Model T",
+                "picture": "https://m.media-amazon.com/images/I/61XlHAkf-FL.jpg",
+                "price": 21.99,
+                "rating": 4.3
+              },
+              {
+                "id": 21,
+                "name": "Chevrolet Bel Air",
+                "picture": "https://m.media-amazon.com/images/I/61DfsOveggL.jpg",
+                "price": 20.99,
+                "rating": 4.1
+              }
+            ]
+          },
+          {
+            "subcategoryName": "Musculer Cars",
+            "carToys": [
+              {
+                "id": 22,
+                "name": "Pontiac GTO",
+                "picture": "https://m.media-amazon.com/images/I/61F3yU688AL.jpg",
+                "price": 22.99,
+                "rating": 4.2
+              },
+              {
+                "id": 23,
+                "name": "Chevrolet Camaro SS",
+                "picture": "https://m.media-amazon.com/images/I/61tX+K7hBeL._AC_UF1000,1000_QL80_.jpg",
+                "price": 23.99,
+                "rating": 4.3
+              },
+              {
+                "id": 24,
+                "name": "Dodge Charger R/T",
+                "picture": "https://m.media-amazon.com/images/I/71znwu22vOL.jpg",
+                "price": 24.99,
+                "rating": 4.4
+              }
+            ]
+          },
+          {
+            "subcategoryName": "Luxury Cars",
+            "carToys": [
+              {
+                "id": 25,
+                "name": "Rolls-Royce Phantom",
+                "picture": "https://m.media-amazon.com/images/I/71GZObdVWfL._AC_SL1500_.jpg",
+                "price": 29.99,
+                "rating": 4.6
+              },
+              {
+                "id": 26,
+                "name": "Mercedes-Benz S-Class",
+                "picture": "https://www.norev.com/215476-superlarge_default/mercedes-benz-s-class-amg-line-2018-iridium-silver-1-18.jpg",
+                "price": 31.99,
+                "rating": 4.8
+              },
+              {
+                "id": 27,
+                "name": "BMW 7 Series",
+                "picture": "https://rukminim1.flixcart.com/image/850/1000/vehicle-pull-along/y/f/p/rastar-die-cast1-43-scale-bmw-7-series-original-imae4acr7tjzmeh6.jpeg?q=90",
+                "price": 30.99,
+                "rating": 4.7
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  
+  
