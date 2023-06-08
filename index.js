@@ -40,6 +40,23 @@ async function run() {
       const result = await categoryCollection.find(query).toArray();
       res.send(result);
   })
+  app.get('/toydetails/:id',async (req,res)=>{
+    const id=req.params.id;
+    const cursor = categoryCollection.find();
+      const result = await cursor.toArray();
+      const allCarToys = [];
+
+result.forEach(category => {
+  category.subcategories.forEach(subcategory => {
+    allCarToys.push(...subcategory.carToys);
+  });
+});
+console.log(allCarToys);
+const singletoy=allCarToys.find(toy=>toy.id==id);
+console.log(singletoy);
+res.send(singletoy)
+
+  })
     // Connect the client to the server	(optional starting in v4.7)
     await client.connect();
     // Send a ping to confirm a successful connection
