@@ -25,6 +25,7 @@ const client = new MongoClient(uri, {
 async function run() {
   try {
     const categoryCollection=client.db('toy-house').collection('shopByCategory');
+    const usertoysCollection=client.db('toy-house').collection('userToys')
 
     app.get('/alltabtoys',async(req,res)=>{
       const cursor = categoryCollection.find();
@@ -56,6 +57,11 @@ const singletoy=allCarToys.find(toy=>toy.id==id);
 console.log(singletoy);
 res.send(singletoy)
 
+  })
+  app.post('/addtoy',async(req,res)=>{
+    const newtoy=req.body;
+    const result=await usertoysCollection.insertOne(newtoy);
+    res.send(result);
   })
     // Connect the client to the server	(optional starting in v4.7)
     await client.connect();
