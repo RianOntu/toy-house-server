@@ -10,7 +10,7 @@ app.use(express.json());
 
 
 
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const uri = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.eiu6qvf.mongodb.net/?retryWrites=true&w=majority`;
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
@@ -75,6 +75,42 @@ res.send(singletoy)
       const result = await usertoysCollection.find(query).toArray();
       res.send(result);
   })
+  app.get('/mytoys',async(req,res)=>{
+    let query = {};
+      if (req.query?.username ) {
+          query = { sellername: req.query.username }
+      }
+      const result = await usertoysCollection.find(query).toArray();
+      res.send(result);
+  })
+  app.get('/update/:id',async (req,res)=>{
+    const id=req.params.id;
+    const filter={_id:new ObjectId(id)};
+    const singleToy=await usertoysCollection.findOne(filter);
+    res.send(singleToy);
+  })
+  app.put('/update/:id', async (req, res) => {
+    const id = req.params.id;
+    const filter = { _id: new ObjectId(id) };
+    const toy = req.body;
+    const option = {upsert: true};
+    const updatedToy = {
+        $set: {
+          nameoftoy:toy.nameoftoy,
+          purloftoy:toy.purloftoy,
+          subcategory:toy.subcategory,
+          price:toy.price,
+          rating:toy.rating,
+          avquantity:toy.avquantity,
+          details:toy.details,
+          sellername:toy.sellername,
+          selleremail:toy.selleremail
+        }
+    }
+    const result = await usertoysCollection.updateOne(filter, updatedToy, option);
+    console.log(result);
+    res.send(result);
+})
 
     // Connect the client to the server	(optional starting in v4.7)
     await client.connect();
