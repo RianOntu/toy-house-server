@@ -64,10 +64,18 @@ res.send(singletoy)
     res.send(result);
   })
   app.get('/alltoys',async(req,res)=>{
-    const result=await usertoysCollection.find().toArray();
+    const result=await usertoysCollection.find().limit(20).toArray();
     res.send(result);
   })
-  
+  app.get('/toysbysearch',async(req,res)=>{
+    let query = {};
+      if (req.query?.toyName ) {
+          query = { nameoftoy: req.query.toyName }
+      }
+      const result = await usertoysCollection.find(query).toArray();
+      res.send(result);
+  })
+
     // Connect the client to the server	(optional starting in v4.7)
     await client.connect();
     // Send a ping to confirm a successful connection
